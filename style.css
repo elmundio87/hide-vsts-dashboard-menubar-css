@@ -1,0 +1,15 @@
+@-moz-document domain("devopsguys.visualstudio.com") {
+    body,
+    .content-section,
+    .hub-content {
+        background-color: rgb(234, 234, 234)
+    }
+    
+    .vsts-header {
+        display: none;
+    }
+
+    .vsts-header+.content-section {
+        top: 0px !important;
+    }
+}
