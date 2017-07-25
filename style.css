@@ -1,15 +1,22 @@
-@-moz-document domain("devopsguys.visualstudio.com") {
-    body,
-    .content-section,
-    .hub-content {
-        background-color: rgb(234, 234, 234)
-    }
-    
-    .vsts-header {
-        display: none;
-    }
+@-moz-document regexp("https://(.*).visualstudio.com/(.*)activeDashboardId=(.*)") {
+body,
+.content-section,
+.hub-content {
+    background-color: rgb(234, 234, 234)
+}
+.vsts-header {
+    display: none;
+}
 
-    .vsts-header+.content-section {
-        top: 0px !important;
-    }
+.vsts-header+.content-section {
+    top: 0px !important;
+}
+
+#dashboard-edit-menu {
+    display: none;
+}
+
+.team-dashboard-view {
+	margin: 0px 0px 0px 0px;
+}
 }
